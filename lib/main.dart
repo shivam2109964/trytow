@@ -1,4 +1,7 @@
+//Pracitce Materail App 
+
 import 'package:flutter/material.dart';
+import 'package:trytwo/src/ScaffoldWidget.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,25 +10,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(
-        46.0,
-      ),
-      child: MaterialApp(
-        theme: ThemeData(
-          primarySwatch: Colors.amber,
-          primaryColor: Colors.amber),
-        
-        home: Scaffold(
-          backgroundColor:
-              Theme.of(context).colorScheme.secondary.withOpacity(0.4),
-          appBar: AppBar(
-            backgroundColor: Theme.of(context).primaryColor,
-            title: const Text("MaterialApp"),
-          ),
-        ),
-        debugShowCheckedModeBanner: false,
-      ),
+    return const MaterialApp(
+      home: TScaffoldWidget(),
     );
   }
 }
